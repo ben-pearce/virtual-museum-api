@@ -21,6 +21,10 @@ const sequelize = new Sequelize(
 fastify.decorate('db', sequelize);
 fastify.decorate('models', initDbModels(sequelize));
 
+fastify.register(require('fastify-cors'), {
+  origin: '*'
+});
+
 fastify.register(async (fastify) => {
   try {
     await fastify.db.authenticate();
