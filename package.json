@@ -1,0 +1,37 @@
+{
+  "name": "virtual-museum-api",
+  "version": "1.0.0",
+  "description": "Back-end API for virtual-museum",
+  "main": "index.js",
+  "scripts": {
+    "test": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ketnipz/virtual-museum-api.git"
+  },
+  "keywords": [
+    "api",
+    "virtual",
+    "museum"
+  ],
+  "author": "Ben Pearce",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ketnipz/virtual-museum-api/issues"
+  },
+  "homepage": "https://github.com/ketnipz/virtual-museum-api#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "fastify": "^3.11.0",
+    "fastify-plugin": "^3.0.0",
+    "jsonapi-serializer": "^3.6.7",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.5.0",
+    "sequelize-auto": "^0.7.11"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0"
+  }
+}
