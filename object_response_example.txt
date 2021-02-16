@@ -1,0 +1,1587 @@
+{
+    "attributes": {
+        "admin": {
+            "added": 1494267557000,
+            "analytics": {
+                "count": {
+                    "last": 216,
+                    "total": 15973
+                }
+            },
+            "created": 826588800000,
+            "id": "object-62245",
+            "language": "eng",
+            "modified": 1523372547000,
+            "previous_status": "valid and published",
+            "processed": 1612914160323,
+            "source": "smgc",
+            "stream": "smg-online",
+            "uid": "co62245",
+            "uuid": "525018b4-a227-328a-8951-e9b3eea4d03f",
+            "version": 57
+        },
+        "categories": [
+            {
+                "museum": "SCM",
+                "name": "Computing & Data Processing",
+                "value": "SCM - Computing & Data Processing"
+            }
+        ],
+        "dates": {
+            "DATE1": "2003"
+        },
+        "description": [
+            {
+                "date": [
+                    {
+                        "earliest": 2014,
+                        "latest": 2014,
+                        "primary": true,
+                        "value": "2014-04-04"
+                    }
+                ],
+                "primary": true,
+                "type": "description",
+                "value": "Analytical engine constructed by the late Chas. Babbage, F.R.S., (this was not put together when received and there are still many pieces, moulds etc. received in 1878, on exhibition in the gallery)\n\nCharles Babbage's calculating engines are among the most celebrated icons in the prehistory of computing. His Difference Engine No. 1 was the first successful automatic calculator and remains one of the finest examples of precision engineering of the time.  The portion shown was assembled in 1832 by Babbage's engineer, Joseph Clement. It consists of about 2000 parts and represents one-seventh of the complete engine. This 'finished portion of the unfinished engine' was demonstrated to some acclaim by Babbage, and functions impeccably to this day. The engine was never completed and most of the 12 000 parts manufactured were later melted for scrap."
+            },
+            {
+                "type": "web description",
+                "value": "This analytical engine, the first fully-automatic calculating machine, was constructed by British computing pioneer Charles Babbage (1791-1871), who first conceived the idea of an advanced calculating machine to calculate and print mathematical tables in 1812. Conceived by him in 1834, this machine was designed to evaluate any mathematical formula and to have even higher powers of analysis than his original Difference engine of the 1820s. Only part of the machine as a trial piece was completed before Babbage's death in 1871."
+            }
+        ],
+        "identifier": [
+            {
+                "primary": true,
+                "type": "accession number",
+                "value": "1878-3"
+            }
+        ],
+        "language": [
+            "eng"
+        ],
+        "legal": {
+            "credit_line": "Major-General Babbage",
+            "legal_status": "permanent collection"
+        },
+        "lifecycle": {
+            "creation": [
+                {
+                    "date": [
+                        {
+                            "earliest": 1871,
+                            "latest": 1871,
+                            "primary": true,
+                            "value": "1871"
+                        }
+                    ],
+                    "maker": [
+                        {
+                            "@link": {
+                                "role": [
+                                    {
+                                        "value": "maker"
+                                    }
+                                ],
+                                "type": "reference"
+                            },
+                            "admin": {
+                                "id": "agent-36993",
+                                "uid": "cp36993",
+                                "uuid": "979b50db-1d7f-3285-9d01-f24c841e43d0"
+                            },
+                            "summary_title": "Charles Babbage"
+                        }
+                    ],
+                    "places": [
+                        {
+                            "@link": {
+                                "role": [
+                                    {
+                                        "value": "made"
+                                    }
+                                ],
+                                "type": "reference"
+                            },
+                            "admin": {
+                                "id": "place-113",
+                                "uid": "cd113",
+                                "uuid": "570507c0-09d4-3e9a-85da-284abeba102f"
+                            },
+                            "sort": 1,
+                            "summary_title": "London"
+                        }
+                    ]
+                }
+            ]
+        },
+        "locations": [
+            {
+                "@link": {
+                    "type": "literal"
+                },
+                "admin": {
+                    "id": "location-1876269",
+                    "uuid": "699d6a50-86fb-3f77-b1b6-e1f8ba405125"
+                },
+                "facilities": [
+                    {
+                        "@link": {
+                            "type": "reference"
+                        },
+                        "admin": {
+                            "id": "facility-6776",
+                            "uid": "cf6776",
+                            "uuid": "11e8567a-7e8f-328c-9a96-dc6380f608b2"
+                        },
+                        "summary_title": "Science Museum, Mathematics: The Winton Gallery"
+                    }
+                ],
+                "level1": "S",
+                "level2": "G46",
+                "level3": "SH",
+                "level4": "74",
+                "name": [
+                    {
+                        "primary": true,
+                        "value": "Science Museum, Mathematics: The Winton Gallery"
+                    },
+                    {
+                        "type": "gallery",
+                        "value": "Mathematics: The Winton Gallery"
+                    },
+                    {
+                        "type": "museum",
+                        "value": "Science Museum"
+                    }
+                ],
+                "purpose": "regular storage",
+                "summary_title": "Science Museum, Mathematics: The Winton Gallery",
+                "value": "Science Museum, Mathematics: The Winton Gallery"
+            }
+        ],
+        "materials": [
+            "various metals, steel, brass, bronze etc",
+            "wood (unidentified)"
+        ],
+        "measurements": {
+            "dimensions": [
+                {
+                    "dimension": "depth",
+                    "units": "in",
+                    "value": "23 5/8"
+                },
+                {
+                    "dimension": "depth",
+                    "units": "mm",
+                    "value": "600"
+                },
+                {
+                    "dimension": "height",
+                    "units": "in",
+                    "value": "39 3/8"
+                },
+                {
+                    "dimension": "height",
+                    "units": "mm",
+                    "value": "1000"
+                },
+                {
+                    "dimension": "width",
+                    "units": "in",
+                    "value": "49 3/16"
+                },
+                {
+                    "dimension": "width",
+                    "units": "mm",
+                    "value": "1250"
+                }
+            ],
+            "display": "Overall: 1000 mm x 1250 mm x 600 mm,"
+        },
+        "multimedia": [
+            {
+                "@link": {
+                    "type": "reference"
+                },
+                "admin": {
+                    "id": "media-53121",
+                    "source": "smgi",
+                    "uid": "i53121",
+                    "uuid": "c7ab5b8c-9a2b-347a-8939-8a2802df9f1f"
+                },
+                "credit": "Science Museum Group Collection",
+                "enhancement": {
+                    "rekognition": [
+                        {
+                            "labels": [
+                                {
+                                    "details": {
+                                        "confidence": 99.66078
+                                    },
+                                    "value": "Machine"
+                                },
+                                {
+                                    "details": {
+                                        "confidence": 93.88391,
+                                        "parents": [
+                                            {
+                                                "value": "Machine"
+                                            }
+                                        ]
+                                    },
+                                    "value": "Motor"
+                                },
+                                {
+                                    "details": {
+                                        "confidence": 93.88391,
+                                        "parents": [
+                                            {
+                                                "value": "Machine"
+                                            },
+                                            {
+                                                "value": "Motor"
+                                            }
+                                        ]
+                                    },
+                                    "value": "Engine"
+                                }
+                            ],
+                            "source": "amazon rekognition"
+                        }
+                    ]
+                },
+                "for_sale": "0",
+                "identifier": [
+                    {
+                        "type": "iBase id",
+                        "value": "53121"
+                    }
+                ],
+                "priority": "0.5",
+                "processed": {
+                    "large": {
+                        "format": "jpeg",
+                        "location": "53/121/large_1878_0003__0001_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 1202
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 1536
+                                }
+                            ]
+                        },
+                        "modified": 1472026209000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "large_thumbnail": {
+                        "format": "jpeg",
+                        "location": "https://coimages.sciencemuseumgroup.org.uk/images/53/121/large_thumbnail_1878_0003__0001_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 250
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 320
+                                }
+                            ]
+                        },
+                        "modified": 1472026209000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "medium": {
+                        "format": "jpeg",
+                        "location": "53/121/medium_1878_0003__0001_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 576
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 736
+                                }
+                            ]
+                        },
+                        "modified": 1472026209000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "medium_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/121/medium_thumbnail_1878_0003__0001_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 150
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 192
+                                }
+                            ]
+                        },
+                        "modified": 1472026209000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "small_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/121/small_thumbnail_1878_0003__0001_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 48
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 61
+                                }
+                            ]
+                        },
+                        "modified": 1472026209000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "zoom": {
+                        "format": "pyramid tiff",
+                        "location": "53/121/1878_0003__0001_.ptif",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 3702
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 4730
+                                }
+                            ]
+                        },
+                        "modified": 1472026209000,
+                        "resizable": true,
+                        "type": "image"
+                    }
+                },
+                "public_view": "1",
+                "publish": "1",
+                "sort": "2015-06-08 11:46:58.0",
+                "source": {
+                    "legal": {
+                        "rights": [
+                            {
+                                "details": "\u00a9 The Board of Trustees of the Science Museum",
+                                "usage_terms": "CC-BY-NC-SA 4.0"
+                            }
+                        ]
+                    },
+                    "title": [
+                        {
+                            "type": "caption",
+                            "value": "Analytical engine constructed by the late Chas. Babbage, F.R.S"
+                        },
+                        {
+                            "type": "main title",
+                            "value": "Analytical engine constructed by the late Chas. Babbage, F.R.S., (this was not put together when received and there are"
+                        }
+                    ]
+                },
+                "traffic_light": "Green",
+                "type": {
+                    "base": "media",
+                    "type": "image"
+                }
+            },
+            {
+                "@link": {
+                    "type": "reference"
+                },
+                "admin": {
+                    "id": "media-53122",
+                    "source": "smgi",
+                    "uid": "i53122",
+                    "uuid": "72d206ed-8dfa-337e-803d-636f5c900b09"
+                },
+                "credit": "Science Museum Group Collection",
+                "enhancement": {
+                    "rekognition": [
+                        {
+                            "labels": [
+                                {
+                                    "details": {
+                                        "confidence": 99.152626
+                                    },
+                                    "value": "Machine"
+                                },
+                                {
+                                    "details": {
+                                        "confidence": 91.34457,
+                                        "parents": [
+                                            {
+                                                "value": "Machine"
+                                            },
+                                            {
+                                                "value": "Motor"
+                                            }
+                                        ]
+                                    },
+                                    "value": "Engine"
+                                },
+                                {
+                                    "details": {
+                                        "confidence": 91.34457,
+                                        "parents": [
+                                            {
+                                                "value": "Machine"
+                                            }
+                                        ]
+                                    },
+                                    "value": "Motor"
+                                }
+                            ],
+                            "source": "amazon rekognition"
+                        }
+                    ]
+                },
+                "for_sale": "0",
+                "identifier": [
+                    {
+                        "type": "iBase id",
+                        "value": "53122"
+                    }
+                ],
+                "priority": "0.5",
+                "processed": {
+                    "large": {
+                        "format": "jpeg",
+                        "location": "53/122/large_1878_0003__0002_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 1104
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 1536
+                                }
+                            ]
+                        },
+                        "modified": 1472026218000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "large_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/122/large_thumbnail_1878_0003__0002_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 240
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 334
+                                }
+                            ]
+                        },
+                        "modified": 1472026218000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "medium": {
+                        "format": "jpeg",
+                        "location": "53/122/medium_1878_0003__0002_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 576
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 801
+                                }
+                            ]
+                        },
+                        "modified": 1472026218000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "medium_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/122/medium_thumbnail_1878_0003__0002_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 144
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 200
+                                }
+                            ]
+                        },
+                        "modified": 1472026218000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "small_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/122/small_thumbnail_1878_0003__0002_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 48
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 67
+                                }
+                            ]
+                        },
+                        "modified": 1472026218000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "zoom": {
+                        "format": "pyramid tiff",
+                        "location": "53/122/1878_0003__0002_.ptif",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 3542
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 4928
+                                }
+                            ]
+                        },
+                        "modified": 1472026218000,
+                        "resizable": true,
+                        "type": "image"
+                    }
+                },
+                "public_view": "1",
+                "publish": "1",
+                "sort": "2015-06-08 11:47:15.0",
+                "source": {
+                    "legal": {
+                        "rights": [
+                            {
+                                "details": "\u00a9 The Board of Trustees of the Science Museum",
+                                "usage_terms": "CC-BY-NC-SA 4.0"
+                            }
+                        ]
+                    },
+                    "title": [
+                        {
+                            "type": "caption",
+                            "value": "Analytical engine constructed by the late Chas. Babbage, F.R.S"
+                        },
+                        {
+                            "type": "main title",
+                            "value": "Analytical engine constructed by the late Chas. Babbage, F.R.S., (this was not put together when received and there are"
+                        }
+                    ]
+                },
+                "traffic_light": "Green",
+                "type": {
+                    "base": "media",
+                    "type": "image"
+                }
+            },
+            {
+                "@link": {
+                    "type": "reference"
+                },
+                "admin": {
+                    "id": "media-53123",
+                    "source": "smgi",
+                    "uid": "i53123",
+                    "uuid": "2b2f0b7a-ddad-39ab-858f-0dfbaf8142de"
+                },
+                "credit": "Science Museum Group Collection",
+                "enhancement": {
+                    "rekognition": [
+                        {
+                            "labels": [
+                                {
+                                    "details": {
+                                        "confidence": 85.32666,
+                                        "instances": [
+                                            {
+                                                "confidence": "85.32666",
+                                                "region": {
+                                                    "height": 0.9852015,
+                                                    "left": 0.01970662,
+                                                    "top": 0.013423075,
+                                                    "type": "bounding box",
+                                                    "width": 0.96098495
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "value": "Rug"
+                                },
+                                {
+                                    "details": {
+                                        "confidence": 79.69013
+                                    },
+                                    "value": "Electrical Device"
+                                }
+                            ],
+                            "source": "amazon rekognition"
+                        }
+                    ]
+                },
+                "for_sale": "0",
+                "identifier": [
+                    {
+                        "type": "iBase id",
+                        "value": "53123"
+                    }
+                ],
+                "priority": "0.5",
+                "processed": {
+                    "large": {
+                        "format": "jpeg",
+                        "location": "53/123/large_1878_0003__0003_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 1536
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 1217
+                                }
+                            ]
+                        },
+                        "modified": 1472026214000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "large_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/123/large_thumbnail_1878_0003__0003_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 404
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 320
+                                }
+                            ]
+                        },
+                        "modified": 1472026214000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "medium": {
+                        "format": "jpeg",
+                        "location": "53/123/medium_1878_0003__0003_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 727
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 576
+                                }
+                            ]
+                        },
+                        "modified": 1472026214000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "medium_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/123/medium_thumbnail_1878_0003__0003_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 242
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 192
+                                }
+                            ]
+                        },
+                        "modified": 1472026214000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "small_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/123/small_thumbnail_1878_0003__0003_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 61
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 48
+                                }
+                            ]
+                        },
+                        "modified": 1472026214000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "zoom": {
+                        "format": "pyramid tiff",
+                        "location": "53/123/1878_0003__0003_.ptif",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 4704
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 3726
+                                }
+                            ]
+                        },
+                        "modified": 1472026214000,
+                        "resizable": true,
+                        "type": "image"
+                    }
+                },
+                "public_view": "1",
+                "publish": "1",
+                "sort": "2015-06-08 11:47:32.0",
+                "source": {
+                    "legal": {
+                        "rights": [
+                            {
+                                "details": "\u00a9 The Board of Trustees of the Science Museum",
+                                "usage_terms": "CC-BY-NC-SA 4.0"
+                            }
+                        ]
+                    },
+                    "title": [
+                        {
+                            "type": "caption",
+                            "value": "Analytical engine constructed by the late Chas. Babbage, F.R.S"
+                        },
+                        {
+                            "type": "main title",
+                            "value": "Analytical engine constructed by the late Chas. Babbage, F.R.S., (this was not put together when received and there are"
+                        }
+                    ]
+                },
+                "traffic_light": "Green",
+                "type": {
+                    "base": "media",
+                    "type": "image"
+                }
+            },
+            {
+                "@link": {
+                    "type": "reference"
+                },
+                "admin": {
+                    "id": "media-53124",
+                    "source": "smgi",
+                    "uid": "i53124",
+                    "uuid": "48f169ce-aa0e-3e61-930b-3dc18f2c24ea"
+                },
+                "credit": "Science Museum Group Collection",
+                "enhancement": {
+                    "rekognition": [
+                        {
+                            "labels": [
+                                {
+                                    "details": {
+                                        "confidence": 99.73656
+                                    },
+                                    "value": "Machine"
+                                },
+                                {
+                                    "details": {
+                                        "confidence": 83.66018,
+                                        "parents": [
+                                            {
+                                                "value": "Machine"
+                                            }
+                                        ]
+                                    },
+                                    "value": "Motor"
+                                },
+                                {
+                                    "details": {
+                                        "confidence": 78.54518,
+                                        "parents": [
+                                            {
+                                                "value": "Motor"
+                                            },
+                                            {
+                                                "value": "Machine"
+                                            }
+                                        ]
+                                    },
+                                    "value": "Engine"
+                                }
+                            ],
+                            "source": "amazon rekognition"
+                        }
+                    ]
+                },
+                "for_sale": "0",
+                "identifier": [
+                    {
+                        "type": "iBase id",
+                        "value": "53124"
+                    }
+                ],
+                "priority": "0.5",
+                "processed": {
+                    "large": {
+                        "format": "jpeg",
+                        "location": "53/124/large_1878_0003__0004_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 1248
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 1536
+                                }
+                            ]
+                        },
+                        "modified": 1472026214000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "large_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/124/large_thumbnail_1878_0003__0004_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 260
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 320
+                                }
+                            ]
+                        },
+                        "modified": 1472026214000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "medium": {
+                        "format": "jpeg",
+                        "location": "53/124/medium_1878_0003__0004_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 576
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 709
+                                }
+                            ]
+                        },
+                        "modified": 1472026214000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "medium_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/124/medium_thumbnail_1878_0003__0004_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 156
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 192
+                                }
+                            ]
+                        },
+                        "modified": 1472026214000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "small_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/124/small_thumbnail_1878_0003__0004_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 48
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 59
+                                }
+                            ]
+                        },
+                        "modified": 1472026214000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "zoom": {
+                        "format": "pyramid tiff",
+                        "location": "53/124/1878_0003__0004_.ptif",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 3778
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 4650
+                                }
+                            ]
+                        },
+                        "modified": 1472026214000,
+                        "resizable": true,
+                        "type": "image"
+                    }
+                },
+                "public_view": "1",
+                "publish": "1",
+                "sort": "2015-06-08 11:47:47.0",
+                "source": {
+                    "legal": {
+                        "rights": [
+                            {
+                                "details": "\u00a9 The Board of Trustees of the Science Museum",
+                                "usage_terms": "CC-BY-NC-SA 4.0"
+                            }
+                        ]
+                    },
+                    "title": [
+                        {
+                            "type": "caption",
+                            "value": "Analytical engine constructed by the late Chas. Babbage, F.R.S"
+                        },
+                        {
+                            "type": "main title",
+                            "value": "Analytical engine constructed by the late Chas. Babbage, F.R.S., (this was not put together when received and there are"
+                        }
+                    ]
+                },
+                "traffic_light": "Green",
+                "type": {
+                    "base": "media",
+                    "type": "image"
+                }
+            },
+            {
+                "@link": {
+                    "type": "reference"
+                },
+                "admin": {
+                    "id": "media-53125",
+                    "source": "smgi",
+                    "uid": "i53125",
+                    "uuid": "a78faeb7-2bb4-37d1-9b25-9b478e4d7143"
+                },
+                "credit": "Science Museum Group Collection",
+                "enhancement": {
+                    "rekognition": [
+                        {
+                            "labels": [
+                                {
+                                    "details": {
+                                        "confidence": 99.326775
+                                    },
+                                    "value": "Machine"
+                                }
+                            ],
+                            "source": "amazon rekognition"
+                        }
+                    ]
+                },
+                "for_sale": "0",
+                "identifier": [
+                    {
+                        "type": "iBase id",
+                        "value": "53125"
+                    }
+                ],
+                "priority": "0.5",
+                "processed": {
+                    "large": {
+                        "format": "jpeg",
+                        "location": "53/125/large_1878_0003__0005_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 1536
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 1220
+                                }
+                            ]
+                        },
+                        "modified": 1472026209000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "large_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/125/large_thumbnail_1878_0003__0005_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 403
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 320
+                                }
+                            ]
+                        },
+                        "modified": 1472026209000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "medium": {
+                        "format": "jpeg",
+                        "location": "53/125/medium_1878_0003__0005_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 725
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 576
+                                }
+                            ]
+                        },
+                        "modified": 1472026209000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "medium_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/125/medium_thumbnail_1878_0003__0005_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 242
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 192
+                                }
+                            ]
+                        },
+                        "modified": 1472026209000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "small_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/125/small_thumbnail_1878_0003__0005_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 60
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 48
+                                }
+                            ]
+                        },
+                        "modified": 1472026209000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "zoom": {
+                        "format": "pyramid tiff",
+                        "location": "53/125/1878_0003__0005_.ptif",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 4692
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 3726
+                                }
+                            ]
+                        },
+                        "modified": 1472026209000,
+                        "resizable": true,
+                        "type": "image"
+                    }
+                },
+                "public_view": "1",
+                "publish": "1",
+                "sort": "2015-06-08 11:48:04.0",
+                "source": {
+                    "legal": {
+                        "rights": [
+                            {
+                                "details": "\u00a9 The Board of Trustees of the Science Museum",
+                                "usage_terms": "CC-BY-NC-SA 4.0"
+                            }
+                        ]
+                    },
+                    "title": [
+                        {
+                            "type": "caption",
+                            "value": "Analytical engine constructed by the late Chas. Babbage, F.R.S"
+                        },
+                        {
+                            "type": "main title",
+                            "value": "Analytical engine constructed by the late Chas. Babbage, F.R.S., (this was not put together when received and there are"
+                        }
+                    ]
+                },
+                "traffic_light": "Green",
+                "type": {
+                    "base": "media",
+                    "type": "image"
+                }
+            },
+            {
+                "@link": {
+                    "type": "reference"
+                },
+                "admin": {
+                    "id": "media-53126",
+                    "source": "smgi",
+                    "uid": "i53126",
+                    "uuid": "f88589d1-bdcd-3567-b220-78e156cc5e2b"
+                },
+                "credit": "Science Museum Group Collection",
+                "enhancement": {
+                    "rekognition": [
+                        {
+                            "labels": [
+                                {
+                                    "details": {
+                                        "confidence": 97.91267,
+                                        "parents": [
+                                            {
+                                                "value": "Urban"
+                                            },
+                                            {
+                                                "value": "Building"
+                                            }
+                                        ]
+                                    },
+                                    "value": "City"
+                                },
+                                {
+                                    "details": {
+                                        "confidence": 97.91267,
+                                        "parents": [
+                                            {
+                                                "value": "City"
+                                            },
+                                            {
+                                                "value": "Urban"
+                                            },
+                                            {
+                                                "value": "Building"
+                                            }
+                                        ]
+                                    },
+                                    "value": "Metropolis"
+                                },
+                                {
+                                    "details": {
+                                        "confidence": 97.91267
+                                    },
+                                    "value": "Urban"
+                                },
+                                {
+                                    "details": {
+                                        "confidence": 97.91267,
+                                        "parents": [
+                                            {
+                                                "value": "Urban"
+                                            },
+                                            {
+                                                "value": "Building"
+                                            }
+                                        ]
+                                    },
+                                    "value": "Town"
+                                },
+                                {
+                                    "details": {
+                                        "confidence": 97.91267
+                                    },
+                                    "value": "Building"
+                                },
+                                {
+                                    "details": {
+                                        "confidence": 93.30035,
+                                        "parents": [
+                                            {
+                                                "value": "City"
+                                            },
+                                            {
+                                                "value": "Urban"
+                                            },
+                                            {
+                                                "value": "Building"
+                                            }
+                                        ]
+                                    },
+                                    "value": "High Rise"
+                                },
+                                {
+                                    "details": {
+                                        "confidence": 80.95362
+                                    },
+                                    "value": "Electronics"
+                                }
+                            ],
+                            "source": "amazon rekognition"
+                        }
+                    ]
+                },
+                "for_sale": "0",
+                "identifier": [
+                    {
+                        "type": "iBase id",
+                        "value": "53126"
+                    }
+                ],
+                "priority": "0.5",
+                "processed": {
+                    "large": {
+                        "format": "jpeg",
+                        "location": "53/126/large_1878_0003__0006_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 1536
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 981
+                                }
+                            ]
+                        },
+                        "modified": 1472026213000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "large_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/126/large_thumbnail_1878_0003__0006_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 501
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 320
+                                }
+                            ]
+                        },
+                        "modified": 1472026213000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "medium": {
+                        "format": "jpeg",
+                        "location": "53/126/medium_1878_0003__0006_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 902
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 576
+                                }
+                            ]
+                        },
+                        "modified": 1472026213000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "medium_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/126/medium_thumbnail_1878_0003__0006_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 301
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 192
+                                }
+                            ]
+                        },
+                        "modified": 1472026213000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "small_thumbnail": {
+                        "format": "jpeg",
+                        "location": "53/126/small_thumbnail_1878_0003__0006_.jpg",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 75
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 48
+                                }
+                            ]
+                        },
+                        "modified": 1472026213000,
+                        "resizable": true,
+                        "type": "image"
+                    },
+                    "zoom": {
+                        "format": "pyramid tiff",
+                        "location": "53/126/1878_0003__0006_.ptif",
+                        "location_is_relative": true,
+                        "measurements": {
+                            "dimensions": [
+                                {
+                                    "dimension": "height",
+                                    "units": "pixels",
+                                    "value": 5244
+                                },
+                                {
+                                    "dimension": "width",
+                                    "units": "pixels",
+                                    "value": 3350
+                                }
+                            ]
+                        },
+                        "modified": 1472026213000,
+                        "resizable": true,
+                        "type": "image"
+                    }
+                },
+                "public_view": "1",
+                "publish": "1",
+                "sort": "2015-06-08 11:48:19.0",
+                "source": {
+                    "legal": {
+                        "rights": [
+                            {
+                                "details": "\u00a9 The Board of Trustees of the Science Museum",
+                                "usage_terms": "CC-BY-NC-SA 4.0"
+                            }
+                        ]
+                    },
+                    "title": [
+                        {
+                            "type": "caption",
+                            "value": "Analytical engine constructed by the late Chas. Babbage, F.R.S"
+                        },
+                        {
+                            "type": "main title",
+                            "value": "Analytical engine constructed by the late Chas. Babbage, F.R.S., (this was not put together when received and there are"
+                        }
+                    ]
+                },
+                "traffic_light": "Green",
+                "type": {
+                    "base": "media",
+                    "type": "image"
+                }
+            }
+        ],
+        "name": [
+            {
+                "primary": true,
+                "type": "SAC_OBJECT",
+                "value": "analytical engines"
+            }
+        ],
+        "numbers": {
+            "NUMBER1": "74",
+            "NUMBER2": "20100224"
+        },
+        "summary_title": "Babbage's Analytical Engine, 1834-1871. (Trial model) (analytical engines)",
+        "title": [
+            {
+                "primary": true,
+                "type": "SAC_TITLE",
+                "value": "Babbage's Analytical Engine, 1834-1871. (Trial model)"
+            }
+        ]
+    },
+    "id": "co62245",
+    "links": {
+        "self": "https://collection.sciencemuseumgroup.org.uk/objects/co62245/babbages-analytical-engine-1834-1871-trial-model-analytical-engines"
+    },
+    "relationships": {
+        "terms": {
+            "data": [
+                {
+                    "id": "ct261776",
+                    "type": "terms"
+                }
+            ]
+        }
+    },
+    "type": "objects"
+},
