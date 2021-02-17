@@ -6,7 +6,8 @@ var ObjectSerializer = new JSONAPISerializer('object', {
     'creationEarliest',
     'creationLatest',
     'collectionsObjectImages',
-    'onDisplayAt'
+    'onDisplayAt',
+    'category'
   ],
   collectionsObjectImages: {
     ref: (object, image) => 
@@ -28,13 +29,16 @@ module.exports = (fastify, opts, done) => {
     var objects = await this.models.collectionsObject.findAll({
       offset: page * limit,
       limit: limit,
-      include: {
+      include: [{
         model: this.models.collectionsObjectImage, 
         as: 'collectionsObjectImages',
         where: {
           is_thumb: true
         }
-      }
+      }, {
+        model: this.models.collectionsObjectCategory,
+        as: 'category'
+      }]
     });
 
     var serializedObjects = ObjectSerializer.serialize(objects);
