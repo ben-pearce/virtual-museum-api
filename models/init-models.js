@@ -29,17 +29,17 @@ function initModels(sequelize) {
   collectionsObjectImage.belongsTo(collectionsObject, { as: 'object', foreignKey: 'object_id'});
   collectionsObject.hasMany(collectionsObjectImage, { as: 'collectionsObjectImages', foreignKey: 'object_id'});
   collectionsObjectMaker.belongsTo(collectionsObject, { as: 'object', foreignKey: 'object_id'});
-  collectionsObject.hasMany(collectionsObjectMaker, { as: 'collections_object_makers', foreignKey: 'object_id'});
+  collectionsObject.hasMany(collectionsObjectMaker, { as: 'collectionsObjectMakers', foreignKey: 'object_id'});
   collectionsObjectPerson.belongsTo(collectionsObject, { as: 'object', foreignKey: 'object_id'});
-  collectionsObject.hasMany(collectionsObjectPerson, { as: 'collections_object_people', foreignKey: 'object_id'});
+  collectionsObject.hasMany(collectionsObjectPerson, { as: 'collectionsObjectPeople', foreignKey: 'object_id'});
   collectionsObjectPlace.belongsTo(collectionsObject, { as: 'object', foreignKey: 'object_id'});
-  collectionsObject.hasMany(collectionsObjectPlace, { as: 'collections_object_places', foreignKey: 'object_id'});
+  collectionsObject.hasMany(collectionsObjectPlace, { as: 'collectionsObjectPlaces', foreignKey: 'object_id'});
   collectionsObject.belongsTo(collectionsObjectCategory, { as: 'category', foreignKey: 'category_id'});
-  collectionsObjectCategory.hasMany(collectionsObject, { as: 'collections_objects', foreignKey: 'category_id'});
+  collectionsObjectCategory.hasMany(collectionsObject, { as: 'collectionsObjects', foreignKey: 'category_id'});
   collectionsObjectPerson.belongsTo(collectionsPerson, { as: 'person', foreignKey: 'person_id'});
-  collectionsPerson.hasMany(collectionsObjectPerson, { as: 'collections_object_people', foreignKey: 'person_id'});
+  collectionsPerson.hasMany(collectionsObjectPerson, { as: 'collectionsObjectPeople', foreignKey: 'person_id'});
   collectionsObjectPlace.belongsTo(collectionsPlace, { as: 'place', foreignKey: 'place_id'});
-  collectionsPlace.hasMany(collectionsObjectPlace, { as: 'collections_object_places', foreignKey: 'place_id'});
+  collectionsPlace.hasMany(collectionsObjectPlace, { as: 'collectionsObjectPlaces', foreignKey: 'place_id'});
 
   return {
     collectionsFacility: collectionsFacility,
