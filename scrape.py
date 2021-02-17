@@ -387,7 +387,7 @@ async def create_object(conn, o: Object):
     await conn.execute(create_object_query,
                        o.id,
                        o.title,
-                       o.description,
+                       o.description or '',
                        o.accession,
                        o.category,
                        o.creation_earliest,
