@@ -26,7 +26,7 @@ module.exports = (fastify, opts, done) => {
     var limit = req.query.limit ? req.query.limit : 10;
     
     var objects = await this.models.collectionsObject.findAll({
-      offset: page,
+      offset: page * limit,
       limit: limit,
       include: {
         model: this.models.collectionsObjectImage, 
