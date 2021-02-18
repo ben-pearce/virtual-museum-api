@@ -8,6 +8,7 @@ const initDbModels = require('./models/init-models');
 
 fastify.register(require('./routes/search/search'));
 fastify.register(require('./routes/image/image'));
+fastify.register(require('./routes/object/object'));
 
 const sequelize = new Sequelize(
   config.database.database, 
