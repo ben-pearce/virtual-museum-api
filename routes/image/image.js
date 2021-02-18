@@ -40,7 +40,7 @@ module.exports = (fastify, opts, done) => {
       rep.code(404).send('Not found');
     } else {
       var imagePublicPath = `${Config.images.src}${image.imagePublicPath}`;
-      console.log(imagePublicPath);
+      
       var raw = await axios.get(imagePublicPath, {
         responseType: 'arraybuffer'
       });
