@@ -22,7 +22,11 @@ class collectionsObjectMaker extends Sequelize.Model {
         type: DataTypes.STRING(20),
         allowNull: false,
         comment: 'Person ID of relationship',
-        primaryKey: true
+        primaryKey: true,
+        references: {
+          model: 'collections_person',
+          key: 'id'
+        }
       }
     }, {
       sequelize,

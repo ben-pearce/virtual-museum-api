@@ -80,7 +80,9 @@ CREATE TABLE public.collections_object_maker (
     person_id character varying(20) NOT NULL,
     PRIMARY KEY (object_id, person_id),
     CONSTRAINT collections_object_makers_collections_object_id_fk 
-        FOREIGN KEY (object_id) REFERENCES public.collections_object(id) ON UPDATE CASCADE ON DELETE CASCADE
+        FOREIGN KEY (object_id) REFERENCES public.collections_object(id) ON UPDATE CASCADE ON DELETE CASCADE,
+    CONSTRAINT collections_object_makers_collections_person_id_fk
+        FOREIGN KEY (person_id) REFERENCES public.collections_person(id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 COMMENT ON TABLE public.collections_object_maker IS 'Collection object creator relations';
