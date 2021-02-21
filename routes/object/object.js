@@ -4,14 +4,16 @@ var ObjectSerializer = new JSONAPISerializer('object', {
   attributes: [
     'name', 
     'description',
+    'accession',
     'creationEarliest',
     'creationLatest',
     'collectionsObjectImages',
     'collectionsObjectMakers',
     'collectionsObjectPeople',
     'collectionsObjectPlaces',
-    'onDisplayAt',
-    'category'
+    'facility',
+    'category',
+    'collectionsUrl'
   ],
   collectionsObjectImages: {
     ref: (object, image) => 
@@ -73,6 +75,9 @@ module.exports = (fastify, opts, done) => {
           model: this.models.collectionsPlace,
           as: 'place'
         }
+      }, {
+        model: this.models.collectionsFacility,
+        as: 'facility'
       }]
     });
 
