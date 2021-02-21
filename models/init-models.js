@@ -41,6 +41,8 @@ function initModels(sequelize) {
   collectionsPerson.hasMany(collectionsObjectPerson, { as: 'collectionsObjectPeople', foreignKey: 'person_id'});
   collectionsObjectPlace.belongsTo(collectionsPlace, { as: 'place', foreignKey: 'place_id'});
   collectionsPlace.hasMany(collectionsObjectPlace, { as: 'collectionsObjectPlaces', foreignKey: 'place_id'});
+  collectionsObject.belongsTo(collectionsFacility, { as: 'facility', foreignKey: 'on_display_at' });
+  collectionsFacility.hasMany(collectionsObject, { as: 'collectionsObjects', foreignKey: 'on_display_at' });
 
   return {
     collectionsFacility: collectionsFacility,

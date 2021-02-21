@@ -47,6 +47,8 @@ CREATE TABLE public.collections_object (
     PRIMARY KEY (id),
     CONSTRAINT collections_object_collections_object_category_id_fk 
         FOREIGN KEY (category_id) REFERENCES public.collections_object_category(id) ON UPDATE CASCADE ON DELETE CASCADE
+    CONSTRAINT collections_object_collections_facility_id_fk
+        FOREIGN KEY (on_display_at) REFERENCES public.collections_facility(id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
 COMMENT ON COLUMN public.collections_object.id IS 'Unique museum identifier';

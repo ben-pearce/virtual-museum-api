@@ -48,7 +48,11 @@ class CollectionsObject extends Sequelize.Model {
         field: 'on_display_at',
         type: DataTypes.STRING(20),
         allowNull: true,
-        comment: 'Location of display unit'
+        comment: 'Location of display unit',
+        references: {
+          model: 'collections_facility',
+          key: 'id'
+        }
       },
       collectionsUrl: {
         field: 'collections_url',
