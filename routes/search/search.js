@@ -1,26 +1,6 @@
 var { Op } = require('sequelize');
 var JSONAPISerializer = require('jsonapi-serializer').Serializer;
 
-var ObjectSerializer = new JSONAPISerializer('object', {
-  attributes: [
-    'name', 
-    'creationEarliest',
-    'creationLatest',
-    'collectionsObjectImages',
-    'onDisplayAt',
-    'category'
-  ],
-  collectionsObjectImages: {
-    ref: (object, image) => 
-      `${object.id}/${object.collectionsObjectImages.indexOf(image)}`,
-    attributes: [
-      'imagePublicPath',
-      'isThumb'
-    ]
-  },
-  keyForAttribute: 'camelCase'
-});
-
 module.exports = (fastify, opts, done) => {
 
   fastify.get('/search', async function (req, rep) {
@@ -52,8 +32,32 @@ module.exports = (fastify, opts, done) => {
       });
     }
 
-    var objects = await this.models.collectionsObject.findAll(queryOptions);
-    var serializedObjects = ObjectSerializer.serialize(objects);
+    var objects = await this.models.collectionsObject.findAndCountAll(queryOptions);
+
+    var ObjectSerializer = new JSONAPISerializer('object', {
+      attributes: [
+        'name', 
+        'creationEarliest',
+        'creationLatest',
+        'collectionsObjectImages',
+        'onDisplayAt',
+        'category'
+      ],
+      collectionsObjectImages: {
+        ref: (object, image) => 
+          `${object.id}/${object.collectionsObjectImages.indexOf(image)}`,
+        attributes: [
+          'imagePublicPath',
+          'isThumb'
+        ]
+      },
+      keyForAttribute: 'camelCase',
+      meta: {
+        count: objects.count
+      }
+    });
+
+    var serializedObjects = ObjectSerializer.serialize(objects.rows);
     rep.send(serializedObjects);
   });
 
