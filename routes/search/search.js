@@ -26,9 +26,10 @@ module.exports = (fastify, opts, done) => {
     
     if(query) {
       Object.assign(queryOptions.where, {
-        [Op.or]: [{
-          name: {[Op.iLike]: `%${query}%`}
-        }]
+        [Op.or]: [
+          { name: {[Op.iLike]: `%${query}%`} }, 
+          { description: {[Op.iLike]: `%${query}%`}}
+        ]
       });
     }
 
