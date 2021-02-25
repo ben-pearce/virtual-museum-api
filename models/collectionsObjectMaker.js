@@ -18,7 +18,7 @@ class collectionsObjectMaker extends Sequelize.Model {
         }
       },
       personId: {
-        field: 'object_id',
+        field: 'person_id',
         type: DataTypes.STRING(20),
         allowNull: false,
         comment: 'Person ID of relationship',
