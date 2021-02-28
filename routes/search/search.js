@@ -1,5 +1,5 @@
 var { Sequelize, Op } = require('sequelize');
-var JSONAPISerializer = require('jsonapi-serializer').Serializer;
+var ObjectResultSerializer = require('../../serializers/objectResultSerializer');
 
 module.exports = (fastify, opts, done) => {
 
@@ -176,31 +176,14 @@ module.exports = (fastify, opts, done) => {
     };
 
     var objects = await this.models.collectionsObject.findAndCountAll(queryOptions);
+    var serializedObjects = ObjectResultSerializer.serialize(objects.rows);
 
-    var ObjectSerializer = new JSONAPISerializer('object', {
-      attributes: [
-        'name', 
-        'creationEarliest',
-        'creationLatest',
-        'collectionsObjectImages',
-        'onDisplayAt',
-        'category'
-      ],
-      collectionsObjectImages: {
-        ref: (object, image) => 
-          `${object.id}/${object.collectionsObjectImages.indexOf(image)}`,
-        attributes: [
-          'imagePublicPath',
-          'isThumb'
-        ]
-      },
-      keyForAttribute: 'camelCase',
+    serializedObjects = {
+      ...serializedObjects,
       meta: {
         count: objects.count
       }
-    });
-
-    var serializedObjects = ObjectSerializer.serialize(objects.rows);
+    };
     rep.send(serializedObjects);
   });
 

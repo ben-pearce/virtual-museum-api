@@ -1,18 +1,5 @@
-var JSONAPISerializer = require('jsonapi-serializer').Serializer;
-
-var PersonSerializer = new JSONAPISerializer('person', {
-  attributes: [
-    'name',
-    'birthDate',
-    'deathDate',
-    'occupation',
-    'note',
-    'description',
-    'nationality',
-    'collectionsUrl'
-  ]
-});
-
+var PersonSerializer = require('../../serializers/personSerializer');
+var ObjectResultSerializer = require('../../serializers/objectResultSerializer');
 
 module.exports = (fastify, opts, done) => {
 
