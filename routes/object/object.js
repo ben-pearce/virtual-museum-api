@@ -14,8 +14,8 @@ module.exports = (fastify, opts, done) => {
         model: this.models.collectionsObjectImage, 
         as: 'collectionsObjectImages',
         where: {
-          is_thumb: false
-        }
+          isThumb: false
+        },
       }, {
         model: this.models.collectionsObjectCategory,
         as: 'category'

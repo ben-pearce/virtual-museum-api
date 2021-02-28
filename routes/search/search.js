@@ -161,7 +161,7 @@ module.exports = (fastify, opts, done) => {
         model: this.models.collectionsObjectImage, 
         as: 'collectionsObjectImages',
         where: {
-          is_thumb: true
+          isThumb: true
         },
         required: false
       }, {
