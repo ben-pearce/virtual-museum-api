@@ -16,6 +16,7 @@ module.exports = (fastify, opts, done) => {
         where: {
           isThumb: false
         },
+        required: false
       }, {
         model: this.models.collectionsObjectCategory,
         as: 'category'
