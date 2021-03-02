@@ -203,5 +203,20 @@ COMMENT ON TABLE public.user_collections_object_favourite IS 'User favourited mu
 COMMENT ON COLUMN public.user_collections_object_favourite.user_id IS 'Liker user ID';
 COMMENT ON COLUMN public.user_collections_object_favourite.object_id IS 'Liked object ID';
 
+CREATE TABLE public.user_collections_person_favourite (
+    user_id integer NOT NULL,
+    person_id character varying(20) NOT NULL,
+    PRIMARY KEY (user_id, person_id),
+    CONSTRAINT user_collections_person_favourite_user_id_fk 
+        FOREIGN KEY (user_id) REFERENCES public."user"(id) ON UPDATE CASCADE ON DELETE CASCADE,
+    CONSTRAINT user_collections_person_favourite_collections_person_id_fk
+        FOREIGN KEY (person_id) REFERENCES public.collections_person(id) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+COMMENT ON TABLE public.user_collections_person_favourite IS 'User favourited museum people';
+COMMENT ON COLUMN public.user_collections_person_favourite.user_id IS 'Liker user ID';
+COMMENT ON COLUMN public.user_collections_person_favourite.person_id IS 'Liked person ID';
+
+
 SELECT pg_catalog.setval('public.collections_object_category_id_seq', 1, false);
 SELECT pg_catalog.setval('public.user_id_seq', 1, false);
