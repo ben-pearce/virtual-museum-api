@@ -20,8 +20,20 @@ const sequelize = new Sequelize(
     logging: msg => fastify.log.debug(msg)
   });
 
+fastify.register(require('fastify-formbody'));
+fastify.register(require('fastify-jwt'), {
+  secret: 'SECRET_TOKEN',
+  cookie: {
+    cookieName: 'token'
+  }
+});
+fastify.register(require('fastify-cookie'));
+fastify.register(require('fastify-auth'));
+
 fastify.decorate('db', sequelize);
 fastify.decorate('models', initDbModels(sequelize));
+
+fastify.decorate('authJwtVerify', (req) => req.jwtVerify());
 
 fastify.register(require('fastify-cors'), {
   origin: '*'
