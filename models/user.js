@@ -13,12 +13,14 @@ class user extends Sequelize.Model {
         comment: 'User unique ID',
         primaryKey: true
       },
-      first_name: {
+      firstName: {
+        field: 'first_name',
         type: DataTypes.STRING(50),
         allowNull: false,
         comment: 'User first name'
       },
-      last_name: {
+      lastName: {
+        field: 'last_name',
         type: DataTypes.STRING(50),
         allowNull: false,
         comment: 'User last name'
