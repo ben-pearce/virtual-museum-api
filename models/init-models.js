@@ -9,6 +9,8 @@ var _collectionsObjectPlace = require('./collectionsObjectPlace');
 var _collectionsPerson = require('./collectionsPerson');
 var _collectionsPlace = require('./collectionsPlace');
 var _user = require('./user');
+var _userCollectionsObjectFavourite = require('./userCollectionsObjectFavourite');
+var _userCollectionsPersonFavourite = require('./userCollectionsPersonFavourite');
 
 function initModels(sequelize) {
   var collectionsFacility = _collectionsFacility(sequelize, DataTypes);
@@ -21,11 +23,15 @@ function initModels(sequelize) {
   var collectionsPerson = _collectionsPerson(sequelize, DataTypes);
   var collectionsPlace = _collectionsPlace(sequelize, DataTypes);
   var user = _user(sequelize, DataTypes);
+  var userCollectionsObjectFavourite = _userCollectionsObjectFavourite(sequelize, DataTypes);
+  var userCollectionsPersonFavourite = _userCollectionsPersonFavourite(sequelize, DataTypes);
 
   collectionsObject.belongsToMany(collectionsPerson, { through: collectionsObjectPerson, foreignKey: 'object_id', otherKey: 'person_id' });
   collectionsObject.belongsToMany(collectionsPlace, { through: collectionsObjectPlace, foreignKey: 'object_id', otherKey: 'place_id' });
   collectionsPerson.belongsToMany(collectionsObject, { through: collectionsObjectPerson, foreignKey: 'person_id', otherKey: 'object_id' });
   collectionsPlace.belongsToMany(collectionsObject, { through: collectionsObjectPlace, foreignKey: 'place_id', otherKey: 'object_id' });
+  collectionsObject.belongsToMany(user, { through: userCollectionsObjectFavourite, foriegnKey: 'object_id', otherKey: 'user_id' });
+  collectionsPerson.belongsToMany(user, { through: userCollectionsPersonFavourite, foreignKey: 'person_id', otherKey: 'user_id' });
   collectionsObjectImage.belongsTo(collectionsObject, { as: 'object', foreignKey: 'object_id'});
   collectionsObject.hasMany(collectionsObjectImage, { as: 'collectionsObjectImages', foreignKey: 'object_id'});
   collectionsObjectMaker.belongsTo(collectionsObject, { as: 'object', foreignKey: 'object_id'});
@@ -55,6 +61,8 @@ function initModels(sequelize) {
     collectionsPerson: collectionsPerson,
     collectionsPlace: collectionsPlace,
     user,
+    userCollectionsObjectFavourite: userCollectionsObjectFavourite,
+    userCollectionsPersonFavourite: userCollectionsPersonFavourite
   };
 }
 module.exports = initModels;
