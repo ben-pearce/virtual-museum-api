@@ -189,6 +189,19 @@ ALTER SEQUENCE public.user_id_seq OWNED BY public."user".id;
 ALTER TABLE ONLY public.collections_object_category ALTER COLUMN id SET DEFAULT nextval('public.collections_object_category_id_seq'::regclass);
 ALTER TABLE ONLY public."user" ALTER COLUMN id SET DEFAULT nextval('public.user_id_seq'::regclass);
 
+CREATE TABLE public.user_collections_object_favourite (
+    user_id integer NOT NULL,
+    object_id character varying(20) NOT NULL,
+    PRIMARY KEY (user_id, object_id),
+    CONSTRAINT user_collections_object_favourite_user_id_fk 
+        FOREIGN KEY (user_id) REFERENCES public."user"(id) ON UPDATE CASCADE ON DELETE CASCADE,
+    CONSTRAINT user_collections_object_favourite_collections_object_id_fk
+        FOREIGN KEY (object_id) REFERENCES public.collections_object(id) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+COMMENT ON TABLE public.user_collections_object_favourite IS 'User favourited museum objects';
+COMMENT ON COLUMN public.user_collections_object_favourite.user_id IS 'Liker user ID';
+COMMENT ON COLUMN public.user_collections_object_favourite.object_id IS 'Liked object ID';
 
 SELECT pg_catalog.setval('public.collections_object_category_id_seq', 1, false);
 SELECT pg_catalog.setval('public.user_id_seq', 1, false);
