@@ -40,6 +40,7 @@ fastify.register(require('./routes/object/object'));
 fastify.register(require('./routes/person/person'));
 
 fastify.register(require('./routes/user/auth'));
+fastify.register(require('./routes/user/favourites'));
 fastify.register(require('./routes/user/profile'));
 
 fastify.register(async (fastify) => {
