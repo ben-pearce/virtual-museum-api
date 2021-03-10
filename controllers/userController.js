@@ -2,6 +2,8 @@ const bcrypt = require('bcrypt');
 
 const UserSerializer = require('../serializers/userSerializer');
 
+const APIError = require('jsonapi-serializer').Error;
+
 class UserController {
 
   static async handleUserAuthentication(req, rep) {
@@ -13,6 +15,14 @@ class UserController {
         email: email
       }
     });
+
+    if(user === null) {
+      return await rep.code(402).send(new APIError({
+        source: { parameter: 'email' },
+        title: 'Account Not Found',
+        detail: 'No account exists associated with that email.'
+      }));
+    }
 
     const passwordValid = await bcrypt.compare(password, user.password.toString());
 
