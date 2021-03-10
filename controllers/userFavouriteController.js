@@ -1,3 +1,7 @@
+const { 
+  FavouriteObjectSerializer, 
+  FavouritePersonSerializer 
+} = require('../serializers/favouriteSerializer');
 
 class UserFavouriteController {
 
@@ -16,11 +20,8 @@ class UserFavouriteController {
       where: whereClause
     });
 
-    if(!favourites.length) {
-      await rep.code(404).send('Not found');
-    } else {
-      await rep.send(favourites);
-    }
+    const serializedFavourites = FavouriteObjectSerializer.serialize(favourites);
+    await rep.send(serializedFavourites);
   }
 
   static async handleGetUserFavouritePeople(req, rep) {
@@ -38,11 +39,8 @@ class UserFavouriteController {
       where: whereClause
     });
 
-    if(!favourites.length) {
-      await rep.code(404).send('Not found');
-    } else {
-      await rep.send(favourites);
-    }
+    const serializedFavourites = FavouritePersonSerializer.serialize(favourites);
+    await rep.send(serializedFavourites);
   }
 
   static async handleUserFavouriteObject(req, rep) {
@@ -53,7 +51,8 @@ class UserFavouriteController {
       objectId: objectId
     });
 
-    await rep.send(favourite);
+    const serializedFavourite = FavouriteObjectSerializer.serialize(favourite);
+    await rep.send(serializedFavourite);
   }
 
   static async handleUserFavouritePerson(req, rep) {
@@ -64,7 +63,8 @@ class UserFavouriteController {
       personId: personId
     });
 
-    await rep.send(favourite);
+    const serializedFavourite = FavouritePersonSerializer.serialize(favourite);
+    await rep.send(serializedFavourite);
   }
 
   static async handleUserUnfavouriteObject(req, rep) {
