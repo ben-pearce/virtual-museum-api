@@ -145,8 +145,6 @@ class ObjectController {
         }
       };
 
-      console.log(serializedObject);
-
       rep.send(serializedObject);
     }
   }
