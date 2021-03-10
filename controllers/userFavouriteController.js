@@ -17,7 +17,11 @@ class UserFavouriteController {
     }
 
     const favourites = await this.models.userCollectionsObjectFavourite.findAll({
-      where: whereClause
+      where: whereClause,
+      include: [{
+        model: this.models.collectionsObject,
+        as: 'object'
+      }]
     });
 
     const serializedFavourites = FavouriteObjectSerializer.serialize(favourites);
@@ -36,7 +40,11 @@ class UserFavouriteController {
     }
 
     const favourites = await this.models.userCollectionsPersonFavourite.findAll({
-      where: whereClause
+      where: whereClause,
+      include: [{
+        model: this.models.collectionsPerson,
+        as: 'person'
+      }]
     });
 
     const serializedFavourites = FavouritePersonSerializer.serialize(favourites);
@@ -76,7 +84,7 @@ class UserFavouriteController {
         objectId: objectId
       }
     });
-
+    
     await rep.send();
   }
 
