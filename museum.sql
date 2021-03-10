@@ -77,20 +77,6 @@ COMMENT ON COLUMN public.collections_object_image.object_id IS 'Related object I
 COMMENT ON COLUMN public.collections_object_image.image_public_path IS 'Path to public image';
 COMMENT ON COLUMN public.collections_object_image.is_thumb IS 'Is image a thumbnail?';
 
-CREATE TABLE public.collections_object_maker (
-    object_id character varying(20) NOT NULL,
-    person_id character varying(20) NOT NULL,
-    PRIMARY KEY (object_id, person_id),
-    CONSTRAINT collections_object_makers_collections_object_id_fk 
-        FOREIGN KEY (object_id) REFERENCES public.collections_object(id) ON UPDATE CASCADE ON DELETE CASCADE,
-    CONSTRAINT collections_object_makers_collections_person_id_fk
-        FOREIGN KEY (person_id) REFERENCES public.collections_person(id) ON UPDATE CASCADE ON DELETE CASCADE
-);
-
-COMMENT ON TABLE public.collections_object_maker IS 'Collection object creator relations';
-COMMENT ON COLUMN public.collections_object_maker.object_id IS 'Object ID of relationship';
-COMMENT ON COLUMN public.collections_object_maker.person_id IS 'Person ID of relationship';
-
 CREATE TABLE public.collections_person (
     id character varying(20) NOT NULL,
     birth_date date,
@@ -116,6 +102,21 @@ COMMENT ON COLUMN public.collections_person.nationality IS 'Nationality of perso
 COMMENT ON COLUMN public.collections_person.collections_url IS 'Original collections URL';
 
 CREATE UNIQUE INDEX collections_people_id_uindex ON public.collections_person USING btree (id);
+
+
+CREATE TABLE public.collections_object_maker (
+    object_id character varying(20) NOT NULL,
+    person_id character varying(20) NOT NULL,
+    PRIMARY KEY (object_id, person_id),
+    CONSTRAINT collections_object_makers_collections_object_id_fk 
+        FOREIGN KEY (object_id) REFERENCES public.collections_object(id) ON UPDATE CASCADE ON DELETE CASCADE,
+    CONSTRAINT collections_object_makers_collections_person_id_fk
+        FOREIGN KEY (person_id) REFERENCES public.collections_person(id) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+COMMENT ON TABLE public.collections_object_maker IS 'Collection object creator relations';
+COMMENT ON COLUMN public.collections_object_maker.object_id IS 'Object ID of relationship';
+COMMENT ON COLUMN public.collections_object_maker.person_id IS 'Person ID of relationship';
 
 CREATE TABLE public.collections_place (
     id character varying(20) NOT NULL,
