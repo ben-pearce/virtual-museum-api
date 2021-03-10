@@ -40,7 +40,11 @@ class UserController {
         sameSite: true
       }).code(200).send(serializedUser);
     } else {
-      await rep.code(402).send();
+      await rep.code(402).send(new APIError({
+        source: { parameter: 'password' },
+        title: 'Incorrect Password',
+        detail: 'The password provided was incorrect.'
+      }));
     }
   }
 
