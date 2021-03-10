@@ -32,6 +32,8 @@ function initModels(sequelize) {
   collectionsPlace.belongsToMany(collectionsObject, { through: collectionsObjectPlace, foreignKey: 'place_id', otherKey: 'object_id' });
   collectionsObject.belongsToMany(user, { through: userCollectionsObjectFavourite, foreignKey: 'object_id', otherKey: 'user_id' });
   collectionsPerson.belongsToMany(user, { through: userCollectionsPersonFavourite, foreignKey: 'person_id', otherKey: 'user_id' });
+  userCollectionsObjectFavourite.belongsTo(collectionsObject, { as: 'object', foreignKey: 'object_id' });
+  userCollectionsPersonFavourite.belongsTo(collectionsPerson, { as: 'person', foreignKey: 'person_id' });
   collectionsObjectImage.belongsTo(collectionsObject, { as: 'object', foreignKey: 'object_id'});
   collectionsObject.hasMany(collectionsObjectImage, { as: 'collectionsObjectImages', foreignKey: 'object_id'});
   collectionsObjectMaker.belongsTo(collectionsObject, { as: 'object', foreignKey: 'object_id'});
