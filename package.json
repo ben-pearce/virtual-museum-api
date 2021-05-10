@@ -31,7 +31,6 @@
     "fastify-formbody": "^5.0.0",
     "fastify-jwt": "^2.3.0",
     "fastify-plugin": "^3.0.0",
-    "jsdoc": "^3.6.6",
     "jsonapi-serializer": "^3.6.7",
     "pg": "^8.5.1",
     "pg-hstore": "^2.3.3",
@@ -39,6 +38,7 @@
     "sequelize-auto": "^0.7.11"
   },
   "devDependencies": {
-    "eslint": "^7.19.0"
+    "eslint": "^7.19.0",
+    "jsdoc": "^3.6.6"
   }
 }
