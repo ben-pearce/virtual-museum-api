@@ -3,6 +3,9 @@ module.exports = (sequelize, DataTypes) => {
   return CollectionsObjectCategory.init(sequelize, DataTypes);
 };
 
+/**
+ * Sequelize model for `collections_object_category` table.
+ */
 class CollectionsObjectCategory extends Sequelize.Model {
   static init(sequelize, DataTypes) {
     super.init({

@@ -3,6 +3,9 @@ module.exports = (sequelize, DataTypes) => {
   return CollectionsPlace.init(sequelize, DataTypes);
 };
 
+/**
+ * Sequelize model for `collections_place` table.
+ */
 class CollectionsPlace extends Sequelize.Model {
   static init(sequelize, DataTypes) {
     super.init({

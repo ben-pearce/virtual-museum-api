@@ -3,6 +3,9 @@ module.exports = (sequelize, DataTypes) => {
   return CollectionsObjectImage.init(sequelize, DataTypes);
 };
 
+/**
+ * Sequelize model for `collections_object_image` table.
+ */
 class CollectionsObjectImage extends Sequelize.Model {
   static init(sequelize, DataTypes) {
     super.init({

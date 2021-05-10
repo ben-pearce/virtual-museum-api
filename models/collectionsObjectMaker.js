@@ -3,6 +3,9 @@ module.exports = (sequelize, DataTypes) => {
   return collectionsObjectMaker.init(sequelize, DataTypes);
 };
 
+/**
+ * Sequelize model for `collections_object_maker` table.
+ */
 class collectionsObjectMaker extends Sequelize.Model {
   static init(sequelize, DataTypes) {
     super.init({

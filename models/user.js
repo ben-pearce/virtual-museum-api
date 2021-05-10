@@ -3,6 +3,9 @@ module.exports = (sequelize, DataTypes) => {
   return user.init(sequelize, DataTypes);
 };
 
+/**
+ * Sequelize model for `user` table.
+ */
 class user extends Sequelize.Model {
   static init(sequelize, DataTypes) {
     super.init({

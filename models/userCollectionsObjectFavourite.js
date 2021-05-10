@@ -3,6 +3,9 @@ module.exports = (sequelize, DataTypes) => {
   return UserCollectionsObjectFavourite.init(sequelize, DataTypes);
 };
 
+/**
+ * Sequelize model for `user_collections_object_favourite` table.
+ */
 class UserCollectionsObjectFavourite extends Sequelize.Model {
   static init(sequelize, DataTypes) {
     super.init({
