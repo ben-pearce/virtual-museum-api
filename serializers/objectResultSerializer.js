@@ -1,5 +1,8 @@
 const JSONAPISerializer = require('jsonapi-serializer').Serializer;
 
+/**
+ * Object results JSON-API serializer instance.
+ */
 const ObjectResultSerializer = new JSONAPISerializer('object', {
   attributes: [
     'name', 

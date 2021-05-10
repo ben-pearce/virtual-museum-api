@@ -1,5 +1,8 @@
 const JSONAPISerializer = require('jsonapi-serializer').Serializer;
 
+/**
+ * Favourite object JSON-API serializer instance.
+ */
 const FavouriteObjectSerializer = new JSONAPISerializer('favouriteObject', {
   attributes: [
     'userId',
@@ -15,6 +18,9 @@ const FavouriteObjectSerializer = new JSONAPISerializer('favouriteObject', {
   keyForAttribute: 'camelCase'
 });
 
+/**
+ * Favourite person JSON-API serializer instance.
+ */
 const FavouritePersonSerializer = new JSONAPISerializer('favouritePerson', {
   attributes: [
     'userId',

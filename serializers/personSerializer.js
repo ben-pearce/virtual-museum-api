@@ -1,5 +1,8 @@
 const JSONAPISerializer = require('jsonapi-serializer').Serializer;
 
+/**
+ * Person JSON-API serializer instance.
+ */
 const PersonSerializer = new JSONAPISerializer('person', {
   attributes: [
     'name',
