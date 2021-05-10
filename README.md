@@ -22,14 +22,32 @@ $ git clone https://github.com/ketnipz/virtual-museum-api && cd virtual-museum-a
 $ npm i 
 ```
 
-3. Import data to data store using scrape.py
+3. Edit server configuration
+```shell
+vi server.config.js
+```
+
+4. Import data to data store using scrape.py
 ```shell
 $ python scrape.py --postres-user postgress --postgress-password postgress
 ```
 
-4. Run the server init file
+5. Run the server init file
 ```shell
 $ node server.js
+```
+
+## Build Documentation
+JSDoc is used throughout and HTML documentaion can be build in just a couple of easy steps.
+
+1. Ensure JSDoc is installed
+```shell
+npm i -g jsdoc
+```
+
+2. Build documentation
+```shell
+cd virtual-museum-api && jsdoc -c jsdoc.conf.json
 ```
 
 ## Statement of Originality
