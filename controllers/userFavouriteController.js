@@ -3,8 +3,20 @@ const {
   FavouritePersonSerializer 
 } = require('../serializers/favouriteSerializer');
 
+/**
+ * Favourites controller responsible for object and people user favourites.
+ */
 class UserFavouriteController {
 
+  /**
+   * Replies with user favourite objects.
+   *
+   * User data is retrieved from session and used to query favourite objects for
+   * the user.
+   *
+   * @param {fastify.Request} req Fastify request instance.
+   * @param {fastify.Reply} rep Fastify reply instance.
+   */
   static async handleGetUserFavouriteObjects(req, rep) {
     const userId = req.user.id;
     const objectId = req.query.objectId;
@@ -28,6 +40,15 @@ class UserFavouriteController {
     await rep.send(serializedFavourites);
   }
 
+  /**
+   * Replies with user favourite people.
+   *
+   * User data is retrieved from session and used to query favourite people for
+   * the user.
+   *
+   * @param {fastify.Request} req Fastify request instance.
+   * @param {fastify.Reply} rep Fastify reply instance.
+   */
   static async handleGetUserFavouritePeople(req, rep) {
     const userId = req.user.id;
     const personId = req.query.personId;
@@ -51,6 +72,12 @@ class UserFavouriteController {
     await rep.send(serializedFavourites);
   }
 
+  /**
+   * Creates new user favourite object.
+   *
+   * @param {fastify.Request} req Fastify request instance.
+   * @param {fastify.Reply} rep Fastify reply instance.
+   */
   static async handleUserFavouriteObject(req, rep) {
     const objectId = req.body.objectId;
 
@@ -63,6 +90,12 @@ class UserFavouriteController {
     await rep.send(serializedFavourite);
   }
 
+  /**
+   * Creates new user favourite person.
+   *
+   * @param {fastify.Request} req Fastify request instance.
+   * @param {fastify.Reply} rep Fastify reply instance.
+   */
   static async handleUserFavouritePerson(req, rep) {
     const personId = req.body.personId;
 
@@ -75,6 +108,12 @@ class UserFavouriteController {
     await rep.send(serializedFavourite);
   }
 
+  /**
+   * Deletes user favourite object.
+   *
+   * @param {fastify.Request} req Fastify request instance.
+   * @param {fastify.Reply} rep Fastify reply instance.
+   */
   static async handleUserUnfavouriteObject(req, rep) {
     const objectId = req.params.objectId;
 
@@ -88,6 +127,12 @@ class UserFavouriteController {
     await rep.send();
   }
 
+  /**
+   * Deletes user favourite person.
+   *
+   * @param {fastify.Request} req Fastify request instance.
+   * @param {fastify.Reply} rep Fastify reply instance.
+   */
   static async handleUserUnfavouritePerson(req, rep) {
     const personId = req.params.personId;
 

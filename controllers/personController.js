@@ -1,9 +1,27 @@
 const PersonSerializer = require('../serializers/personSerializer');
 const ObjectResultSerializer = require('../serializers/objectResultSerializer');
 
-
+/**
+ * Person controller responsible for providing access to museum person data.
+ */
 class PersonController {
 
+  /**
+   * Finds an person based on url parameters.
+   *
+   * Data from related entities are joined using sequelize.
+   *
+   * Related objects are selected using sequelize by submitting multiple queries
+   * for other objects matching specific attributes of the person and selecting
+   * the first four closest matches.
+   *
+   * Reply is JSON-API serialized encoding of the person data.
+   *
+   * If the ID does not exist then the reply is 404.
+   *
+   * @param {fastify.Request} req Fastify request instance.
+   * @param {fastify.Reply} rep Fastify reply instance.
+   */
   static async handleGetPerson(req, rep) {
     const person = await this.models.collectionsPerson.findOne({
       where: {

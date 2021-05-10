@@ -1,9 +1,25 @@
 const { Sequelize, Op } = require('sequelize');
 const ObjectResultSerializer = require('../serializers/objectResultSerializer');
 
+/**
+ * Search controller responsible for querying objects entity for matching
+ * results.
+ */
 class SearchController {
 
+  /**
+   * Handles a search query submitted by the client.
+   *
+   * Filter options, sort and keyword search are provided as url parameters,
+   * these are parsed and used to query the object entity.
+   * 
+   * Reply is JSON-API serialized encoding of the object data list.
+   *
+   * @param {fastify.Request} req Fastify request instance.
+   * @param {fastify.Reply} rep Fastify reply instance.
+   */
   static async handleSearchQuery(req, rep) {
+    // Retrieve search query parameters.
     const page = req.query['page[number]'] ? req.query['page[number]'] : 0;
     const limit = req.query['page[size]'] ? req.query['page[size]'] : 10;
     const query = req.query.q;
@@ -20,6 +36,8 @@ class SearchController {
     const filters = [];
     const relationshipFilters = [];
     
+    // Push keyword search filter. Matches are where the keyword appears
+    // anywhere within the object name or description.
     if(query) {
       filters.push({
         [Op.or]: [
@@ -29,6 +47,7 @@ class SearchController {
       });
     }
 
+    // Push image filter into query.
     if(image) {
       image = Array.from(image);
       const imageClause = [];
@@ -41,6 +60,7 @@ class SearchController {
       filters.push({ [Op.or]: imageClause });
     }
 
+    // Push category filter into query.
     if(category) {
       if(!Array.isArray(category)) {
         category = [category];
@@ -54,6 +74,7 @@ class SearchController {
       filters.push({ [Op.or]: categoryClause });
     }
 
+    // Push maker filter into query.
     if(maker) {
       if(!Array.isArray(maker)) {
         maker = [maker];
@@ -75,6 +96,7 @@ class SearchController {
       });
     }
 
+    // Push place filter into query.
     if(place) {
       if(!Array.isArray(place)) {
         place = [place];
@@ -96,6 +118,7 @@ class SearchController {
       });
     }
 
+    // Push facility filter into query.
     if(facility) {
       if(!Array.isArray(facility)) {
         facility = [facility];
@@ -113,6 +136,7 @@ class SearchController {
       filters.push({ [Op.or]: facilityClause });
     }
 
+    // Push dates filter into query.
     if(creationEarliest) {
       filters.push({
         creationEarliest: {
@@ -129,6 +153,7 @@ class SearchController {
       });
     }
 
+    // Create order by clause.
     const orderBy = [];
     if(sort === '1') {
       orderBy.push([
@@ -154,6 +179,7 @@ class SearchController {
       ]);
     }
 
+    // Build sequelize query from filters above.
     const queryOptions = {
       offset: page * limit,
       limit: limit,
@@ -175,6 +201,7 @@ class SearchController {
       subQuery: false
     };
 
+    // Submit query and reply with result.
     const objects = await this.models.collectionsObject.findAndCountAll(queryOptions);
     let serializedObjects = ObjectResultSerializer.serialize(objects.rows);
 

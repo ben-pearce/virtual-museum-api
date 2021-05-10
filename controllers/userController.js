@@ -4,8 +4,27 @@ const UserSerializer = require('../serializers/userSerializer');
 
 const APIError = require('jsonapi-serializer').Error;
 
+/**
+ * User controller used for handling user authentication and registration.
+ */
 class UserController {
 
+  /**
+   * Handles user login.
+   *
+   * Retrieves user email and password from the request body.
+   *
+   * User details are queried from data store, submitted password is hashed and
+   * compared with stored password.
+   *
+   * If authentication is successful json-web-token is set and 200 reply is
+   * sent.
+   *
+   * If authentication is unsuccessful then response is 402 with error message.
+   *
+   * @param {fastify.Request} req Fastify request instance.
+   * @param {fastify.Reply} rep Fastify reply instance.
+   */
   static async handleUserAuthentication(req, rep) {
     const email = req.body.email;
     const password = req.body.password;
@@ -48,10 +67,28 @@ class UserController {
     }
   }
 
+  /**
+   * Handles user logout. 
+   * 
+   * json-web-token is cleared from client cookies.
+   * 
+   * @param {fastify.Request} req Fastify request instance.
+   * @param {fastify.Reply} rep Fastify reply instance.
+   */
   static async handleUserLogout(req, rep) {
     await rep.clearCookie('token', { path: '/' }).code(200).send();
   }
 
+  /**
+   * Handles user sign up.
+   *
+   * User credentials are retrieved from the request body and creates new user
+   * model. Password is hashed and json-web-token is generated. Auth token is
+   * set in cookie on response.
+   *
+   * @param {fastify.Request} req Fastify request instance.
+   * @param {fastify.Reply} rep Fastify reply instance.
+   */
   static async handleUserSignUp(req, rep) {
     const firstName = req.body.firstName;
     const lastName = req.body.lastName;
@@ -82,6 +119,15 @@ class UserController {
     }).code(200).send(serializedUser);
   }
 
+  /**
+   * Replies with user data for current user session.
+   *
+   * User email is retrieved from session and used to retrieve the data from
+   * data store.
+   *
+   * @param {fastify.Request} req Fastify request instance.
+   * @param {fastify.Reply} rep Fastify reply instance.
+   */
   static async handleGetUserProfile(req, rep) {
     const user = await this.models.user.findOne({
       where: {
