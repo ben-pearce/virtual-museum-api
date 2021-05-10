@@ -1,5 +1,8 @@
 const ImageController = require('../../controllers/imageController');
 
+/**
+ * API image route endpoint definitions.
+ */
 module.exports = (fastify, opts, done) => {
 
   fastify.route({

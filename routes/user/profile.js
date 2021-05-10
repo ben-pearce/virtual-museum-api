@@ -1,5 +1,8 @@
 const UserController = require('../../controllers/userController');
 
+/**
+ * API profile route endpoint definitions.
+ */
 module.exports = (fastify, opts, done) => {
 
   fastify.route({

@@ -1,5 +1,8 @@
 const UserFavouriteController = require('../../controllers/userFavouriteController');
 
+/**
+ * API favourites route endpoint definitions.
+ */
 module.exports = (fastify, opts, done) => {
 
   fastify.route({

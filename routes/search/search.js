@@ -1,5 +1,8 @@
 const SearchController = require('../../controllers/searchController');
 
+/**
+ * API search route endpoint definitions.
+ */
 module.exports = (fastify, opts, done) => {
 
   fastify.route({
